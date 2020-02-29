@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white</item>
+       <!-- <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>-->
+
+
+    </style>
+
+
+    <style name="JianDao" parent="AppTheme"/>
+
+    <style name="JianDao.LineHorizontal">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginStart">42dp</item>
+        <item name="android:layout_marginEnd">42dp</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="android:background">@color/gray_7</item>
+    </style>
+
+    <style name="JianDao.LineHorizontal.NewsItem">
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:layout_marginEnd">15dp</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+    </style>
+
+    <style name="JianDao.AutoEditText">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textColorHint">@color/gray_CCCCCC</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+
+    <style name="JianDao.NewsTitleStyle">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/black_282B2E</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="JianDao.NewsLabel">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/gray_9B9C9E</item>
+    </style>
+</resources>

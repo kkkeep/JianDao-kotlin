@@ -1,0 +1,62 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation deps.googleX.material
+    implementation  deps.androidX.appcompat
+    implementation  deps.androidX.constraintlayout
+
+
+    api deps.okhttp3X.logging_interceptor
+    api deps.okhttp3X.okhttp3
+
+    api deps.retrofitX.retrofit2
+    api deps.retrofitX.retrofit_converter_gson
+    api deps.retrofitX.retrofit2_adapter_rxjava
+    api deps.retrofitX.retrofit2_rxjava_components
+
+    api deps.rxJavaX.rxjava
+    api deps.rxJavaX.rxAndroid
+
+  //  implementation 'com.github.Cutta:GifView:1.4'
+    implementation deps.other.gifView
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+
+
+
+
+
+}
